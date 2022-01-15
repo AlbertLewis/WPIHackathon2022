@@ -1,5 +1,6 @@
 :root {
     --green: #00FF00;
+    --red: #FF0000;
     --white: #ffffff;
     --black: #000000;
 }
@@ -27,7 +28,7 @@ li {
   
 
 .light-theme {
-    --bg: var(--green);
+    --bg: var(--red);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
