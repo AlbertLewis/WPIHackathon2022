@@ -1,16 +1,18 @@
 :root {
     --green: #00FF00;
-    --white: #ffffff;
+    --red: #FF0000;
+    --crim: #ad1131;
+    --grey: #c0b5b5;
     --black: #000000;
 }
 
 * {
-    color: var(--fontColor);
+    color: var(--grey);
     font-family: helvetica;
 }
 
 body {
-    background: var(--bg);
+    background: var(--crim);
 }
 
 ul {
@@ -27,7 +29,7 @@ li {
   
 
 .light-theme {
-    --bg: var(--green);
+    --bg: var(--crim);
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
@@ -42,7 +44,7 @@ li {
 .btn {
     position: absolute;
     top: 20px;
-    left: 250px;
+    left: 600px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
