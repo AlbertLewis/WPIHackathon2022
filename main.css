@@ -5,9 +5,14 @@
     --black: #000000;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(Nunito-Black.ttf);
+ }
+
 * {
     color: var(--grey);
-    font-family: helvetica;
+    font-family: myFirstFont;
     background-color: var(--crim);
     text-align: center;
 }
