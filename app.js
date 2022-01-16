@@ -1,8 +1,11 @@
 'use strict'
 
 const switcher = document.querySelector('.btn');
+const time_control = document.querySelector('input[type="time"]');
 
 switcher.addEventListener('click', switchTheme);
+pick_time.addEventListener('change', calculate_wakeup_time);
+
 
 function switchTheme() {
 
