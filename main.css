@@ -9,24 +9,8 @@
 * {
     color: var(--fontColor);
     font-family: helvetica;
+    background-color: var(--crim);
 }
-
-body {
-    background: var(--bg);
-}
-
-ul {
-    font-family: helvetica;
-}
-
-li {
-    list-style: circle;
-  }
-  
-.list {
-    list-style: square;
-  }
-  
 
 .light-theme {
     --bg: var(--crim);
@@ -34,11 +18,8 @@ li {
     --btnBg: var(--black);
     --btnFontColor: var(--white);
 }
-.dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--green);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
+#time{
+    background-color: white;
 }
 
 .btn {
