@@ -8,10 +8,12 @@ function calculateTime() {
     hours = hours - 8;
 
     if(hours <= 0) {
-        hours = hours + 12;
+        return (hours + 12).toString() + ":" + minutes;
+    }
+    else {
+        return hours.toString() + ":" + minutes;
     }
 
-    return hours.toString() + ":" + minutes;
 
 }
 
