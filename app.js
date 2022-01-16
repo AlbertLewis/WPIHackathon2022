@@ -1,25 +1,22 @@
 'use strict'
 
-const switcher = document.querySelector('.btn');
-const time_control = document.querySelector('input[type="time"]');
+function calculateTime() {
+    var input_time = document.getElementById("time").value;
+    var hours = parseInt(input_time.substring(0,input_time.indexOf(':')));
+    var minutes = input_time.substring(input_time.indexOf(':')+1);
 
-switcher.addEventListener('click', switchTheme);
-pick_time.addEventListener('change', calculate_wakeup_time);
+    hours = hours - 8;
 
-
-function switchTheme() {
-
-    document.body.classList.toggle('dark-theme')
-
-    var className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark";
-    }
-    else {
-        this.textContent = "Light"
+    if(hours <= 0) {
+        hours = hours + 12;
     }
 
-    console.log('current class name: ' + className);
-    
-    
+    return hours.toString() + ":" + minutes;
+
+}
+
+function showInput() {
+
+    document.getElementById('display').innerHTML =
+    calculateTime();
 }

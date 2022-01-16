@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goat to Sleep</title>
     <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
 </head>
-<body class="light-theme">
-<script src="app.js"></script>
+  
+<body>
+    <img src="logo" alt="Logo" width="200" height="200">
+    <h1>WPI Sleep Calcuator</h1>
+    <form>
+        <label for="time">When is your first class?</label><br>
+        <input type="time" id="time" name="Wake Up Time">        
+    </form>
+
+    <input type="submit" id="submit" onclick="showInput();"><br>   
+    <label >Your input:</label>
+    <p id='display'></p>
+
 <noscript>You need to enable Javascript to view the full site.</noscript>
 </body>
 </html>
